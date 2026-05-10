@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Tic-Tac-Toe Game</title>
+    <title>Tic-Tac-Toe Game by kanika</title>
 </head>
 <style>
     *{
@@ -57,7 +57,7 @@
         color: #ffffff;
         font-size: 8vmin;
     }
-    /* Fixed: Changed #hide to .hide to match the class used in JS */
+    
     .hide {
         display: none;
     }
@@ -117,7 +117,7 @@
         msgContainer.classList.add("hide");
     };
 
-    // Fixed: Added showDraw function before it is called
+
     const showDraw = () => {
         msg.innerText = "Game was a Draw!";
         msgContainer.classList.remove("hide");
@@ -160,10 +160,10 @@
             }
         }
 
-        // Fixed: Draw logic must be inside checkwinner to work correctly
+        
         let allFilled = true;
         for(let box of boxes){
-            if(box.innerText === "") { // Fixed typo: inneText to innerText
+            if(box.innerText === "") { 
                 allFilled = false;
                 break;
             }
@@ -174,7 +174,7 @@
         }
     };
 
-    // Fixed: Standardized casing for event listeners
+    
     newGameBtn.addEventListener("click", resetGame);
     resetBtn.addEventListener("click", resetGame);
 
